@@ -1,0 +1,467 @@
+/* Styles to entire application */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f5f5;
+  color: #232b2b;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  display: inline;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #232b2b;
+}
+
+::placeholder {
+  color: #a4a4a4;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+/***** Logo Styles  *****/
+.logo {
+  color: #e8505b;
+  font-family: "Oleo Script", cursive;
+  font-size: 7rem;
+  font-weight: 700;
+  margin: 1% 0 0 5%;
+  -webkit-text-stroke: 1.5px white;
+}
+
+/***** Navbar Styles  *****/
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  align-self: center;
+  list-style-type: none;
+  padding-right: 10%;
+  line-height: 1.5;
+}
+
+.linklike {
+  border: none;
+  background-color: #f6f5f5;
+  color: #232b2b;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 0;
+}
+
+/***** Form Styles  *****/
+.form {
+  margin-bottom: 3%;
+  padding-top: 8%;
+  text-align: center;
+}
+
+/* Search Bar */
+.food-search-bar {
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  width: 50%;
+}
+
+/* Filters */
+select {
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select option {
+  background-color: #fff;
+}
+
+.filter-search {
+  border: 1px solid transparent;
+  color: #232b2b;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.filter-search:hover {
+  border: 1px solid #414A4C;
+}
+
+/* Search Button */
+.food-search-button {
+  background-color: #e8505b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: "Montserrat", Arial;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 1rem auto;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  width: 28%;
+}
+
+.food-search-button:hover {
+  background-color: #C6444E;
+}
+
+/***** Recipe Styles *****/
+/* Styles for All Listed Recipes */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  cursor: pointer;
+  padding: 2% 0;
+  text-align: center;
+  width: 30%;
+}
+
+.item p {
+  padding-top: 0;
+}
+
+/* Recipe Images */
+.recipe-image {
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+}
+
+/***** Back Button Styles *****/
+.back-button {
+  border: 2px solid #292b2c;
+  border-radius: 5px;
+  color: #232b2b;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 8% 0 2% 0;
+  padding: 0.5rem;
+}
+
+.back-button:hover {
+  background-color: #292b2c;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+/***** Styles for Individual Recipes *****/
+.recipe-container {
+  width: 100%;
+}
+
+.recipe-title-info {
+  text-align: center;
+  padding-top: 3%;
+}
+
+.head-recipe-title {
+  display: block;
+}
+
+.recipe-main-image {
+  border-radius: 20px;
+  margin-top: 3%;
+}
+
+.top-save-button {
+  margin-left: 2rem;
+}
+
+.save-recipe-button {
+  background-color: #fff;
+  border: 2px solid #e8505b;
+  border-radius: 5px;
+  color: #232b2b;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.save-recipe-button:hover {
+  background-color: #e8505b;
+  border: 2px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bottom-save-button {
+  text-align: center;
+}
+
+.see-grocery-list-button {
+  background-color: #fff;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  color: #232b2b;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 8% 0 0 0.5%;
+  padding: 0.5rem;
+}
+
+.see-grocery-list-button:hover {
+  background-color: #006400;
+  border: 2px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bottom-buttons {
+  text-align: center;
+}
+
+hr {
+  border: solid #fff;
+  border-width: 1px 0 0 0;
+  width: 50%;
+  margin: 5% auto;
+}
+
+/***** Ingredient Styles *****/
+.ingredient-list {
+  padding: 0 10%;
+}
+
+.ingredient-list h3 {
+  text-align: center;
+}
+
+.ingredient-list ul {
+  list-style-type: none;
+}
+
+.ingredient-image {
+  border-radius: 100%;
+}
+
+.ingredient-list-item {
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2%;
+  width: 30%;
+}
+
+.ingredient-list-item input {
+  cursor: pointer;
+}
+
+.ingredient-list-item input:hover {
+  background-color: #e5e5e5;
+}
+
+.website-url a {
+  color: #006400;
+}
+
+.website-url a:hover {
+  color: #1fc600;
+}
+
+/***** Grocery List Styles  *****/
+.grocery-container {
+  width: 50%;
+  padding: 5% 0 5% 5%;
+}
+
+.bookmarked-container {
+  width: 40%;
+}
+
+.grocery-container p {
+  font-family: "Patrick Hand", Roboto, sans-serif;
+  font-size: 1.5rem;
+}
+
+.grocery-list {
+  font-family: "Patrick Hand", Roboto, sans-serif;
+  font-size: 1.4rem;
+  list-style-type: square;
+  padding-left: 0;
+}
+
+.hide {
+  border: none;
+  display: none;
+  margin-left: 4rem;
+}
+
+.grocery-list-items {
+  line-height: 0.75;
+  font-size: 1.5rem;
+}
+
+.extra-grocery-items {
+  line-height: 1.75;
+}
+
+.extra-grocery-list {
+  font-family: "Patrick Hand", Roboto, sans-serif;
+  font-size: 1.4rem;
+  list-style-type: square;
+}
+
+.extra-grocery-items:hover {
+  background-color: #e5e5e5;
+}
+
+.extra-grocery-items:hover .hide {
+  display: inline-block;
+  color: red;
+  cursor: pointer;
+}
+
+.add-ingredient-bar {
+  border: none;
+  border-radius: 5px;
+  margin-left: 2%;
+  padding: 1%;
+  width: 35%;
+}
+
+.add-ingredient-button {
+  background-color: #e8505b;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+}
+
+.add-ingredient-button:hover {
+  background-color: #C6444E;
+}
+
+/* Bookmarked Recipes styles */
+.bookmarked-container {
+  width: 40%;
+  padding-top: 5%;
+}
+
+.bookmarked-button {
+  background-color: #fff;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  color: #232b2b;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: 2%;
+  padding: 0.5rem;
+}
+
+.bookmarked-button:hover {
+  background-color: #006400;
+  border: 2px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Log In Container Styles */
+.login-container {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.login-button {
+  border: 2px solid #292b2c;
+  border-radius: 5px;
+  color: #232b2b;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 2% 0 0 1%;
+  padding: 0.5rem;
+}
+
+.login-button:hover {
+  background-color: #292b2c;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.source-names-container {
+  margin-top: 3%;
+}
+
+.source-names {
+  list-style-type: none;
+}
+
+.remove-recipe-button {
+  background-color: #e8505b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.saved-image {
+  border-radius: 15px;
+  display: block;
+  margin-bottom: 2%;
+  width: 50%;
+}
+
+.saved-source {
+  color: #006400;
+}
+
+.saved-source:hover {
+  color: #1fc600;
+}
+
+.remove-recipe-button:hover {
+  background-color: #C6444E;
+}
